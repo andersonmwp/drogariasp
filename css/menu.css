@@ -1,0 +1,74 @@
+/*---------- Menu Desktop ----------*/
+.menu__desktop {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+
+    height: 100%;
+    width: 75px;
+    
+    padding-top: 50px;
+    
+    color: var(--corp);
+    box-shadow: 2px 1px 1rem;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.menu__item  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 93px;
+    height: 62px;
+
+    font-size: 25px;
+    color: var(--clear);
+
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menu__item:hover, .ativo{
+    background-color: var(--corp);
+    color: var(--bg);
+}
+
+.menu__logo{
+    display: flex;
+    
+    width: 100%;
+    max-height: 100%;
+
+    padding-bottom: 1rem;
+}
+
+.menu__logo-img {
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/*---------- Menu Desktop ----------*/
+
+
+/*---------- Responsivo  ----------*/
+@media screen and (max-width: 1100px) {
+    .menu__desktop {
+        display: none;
+    }
+}
