@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/menu.css">
 </head>
 <body>
+    <!-- ######### SEÇÃO DO MENU DESKTOP ######### -->
     <header class="menu__desktop">
         <nav class="menu">
             <ul>
@@ -62,7 +63,68 @@
         </nav>
     </header>
 
+    <!-- ######### SEÇÃO DO MENU MOBILE ######### -->
+    <section class="menu__mobile">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu__mobile-container">
+            <div class="container-fluid">
+                <img class="menu__mobile-logo" src="https://drogariasp.newpost.com/assets/nway.png" alt="logo da empresa">
+              <button class="btn__mobile" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse menu__item-container" id="navbarNav">
+                <ul class="navbar-nav">
+                    <a href="#">
+                        <li class="menu__item-mob">
+                            <i class="fas fa-home">
+                                <span>Dashboard</span>
+                            </i>
+                        </li>
+                    </a>
 
+                    <a href="#">
+                        <li class="menu__item-mob">
+                            <i class="fas fa-shopping-basket">
+                                <span>Pedidos</span>
+                            </i>
+                        </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li class="menu__item-mob">
+                            <i class="fas fa-plus-circle">
+                                <span>Novo Pedido</span>
+                            </i>
+                        </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li class="menu__item-mob">
+                            <i class="fas fa-tags">
+                                <span>Etiquetas</span>
+                            </i>
+                        </li>
+                    </a>
+                    <hr>
+                    <a href="#">
+                        <li class="menu__item-mob">
+                            <i class="fas fa-lock">
+                                <span>Alterar Senha</span>
+                            </i>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li class="menu__item-mob">
+                            <i class="fas fa-power-off">
+                                <span>Logout</span>
+                            </i>
+                        </li>
+                    </a>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>  
