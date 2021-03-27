@@ -1,0 +1,79 @@
+/*---------- Filtros  ----------*/
+/* Geral */
+.filtros__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 50px;
+}
+
+/* Texto */
+.titulo {
+    color: var(--corp);
+    font-size: 26px;
+    width: 250px;
+}
+
+/* Cards */
+.cards__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+.card_status {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    width: 200px;
+    height: 100%;
+
+    padding: 0.5rem;
+
+    border-radius: 100px;
+    box-shadow: 2px 1px 0.5rem var(--corp);
+
+    background: none;
+}
+
+.card_status h1{
+    color: var(--corp);
+    font-size: 3rem;
+}
+
+.card_status p{
+    color: var(--corp);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card_status i{
+    color: var(--corp);
+    font-size: 2rem;
+}
+
+.card_status:hover {
+    color: var(--bg);
+    background-color: var(--corp2);
+    cursor: default;
+    border-radius: 100px;
+}
+
+/*---------- Responsivo  ----------*/
+@media screen and (max-width: 990px) {
+    .filtros__container, 
+    .cards__container {
+        flex-direction: column;
+    }
+    .card_status {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .titulo {
+        display: none;
+    }
+}
