@@ -56,7 +56,7 @@
     font-size: 2rem;
 }
 
-.card_status:hover {
+.card_status:hover, .ativo-status{
     color: var(--bg);
     background-color: var(--corp2);
     cursor: default;
