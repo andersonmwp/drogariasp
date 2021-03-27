@@ -24,7 +24,7 @@ html, body, * {
     font-family: 'Sf_Display', sans-serif;
 }
 
-a, ul, li, a:hover{
+a, ul, li{
     text-decoration: none;
     list-style: none;
     margin: 0;

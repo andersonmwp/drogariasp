@@ -1,0 +1,68 @@
+/*---------- Tabela e Filtro Desktop ----------*/
+/* Geral */
+.tabela__filtro-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+/* Botão do filtro */
+.btn__filtro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--corp2);
+    color: var(--bg);
+    font-weight: bold;
+
+    padding: 0px 20px;
+
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 1px 0.2em var(--border);
+   
+    width: 100%;
+    max-width: 230px;
+    min-height: 48px;
+
+    margin-left: 300px;
+}
+
+.btn__filtro:hover {
+    background: var(--bg);
+    color: var(--corp2);
+    box-shadow: 2px 1px 0.2em var(--corp2);
+}
+
+/* Input do filtro */
+.tabela__filtro-campo input {
+    background: var(--bg2);
+    color: var(--corp);
+
+    height: 48px;
+    width: 350px !important;
+    
+    padding: 0px 20px;
+    padding-right: 40px;
+
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 1px 0.2em var(--border);
+
+    margin: 20px;
+}
+
+.tabela__filtro-campo:hover input {
+    box-shadow: 2px 1px 2em var(--clear);
+}
+
+
+
+
+/*---------- Responsivo  ----------*/
+@media screen and (max-width: 990px) {
+    .tabela__desktop {
+        display: none;
+    }
+}
