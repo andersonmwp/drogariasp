@@ -1,0 +1,118 @@
+/*---------- Página de novo pedido  ----------*/
+
+.novoPedido__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 50px;
+}
+
+/* Titulos */
+.titulos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.novoPedido__titulo {
+    color: var(--corp);
+    font-size: 26px;
+    width: 250px;
+}
+
+.subtitulo {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Formulário superior */
+.novoPedido__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+.form-control {
+    display: block;
+    width: 400px;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 20px ;
+}
+
+.form-control:focus {
+    background-color: var(--bg);
+}
+
+.bottom-border {
+    background-color: var(--bg);
+    border: none;
+    border-bottom: 1px solid var(--corp2);
+    color: var(--gray);
+}
+
+/* Formulário Inferior */
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFF;
+    margin-bottom: 30pxs;
+}
+
+.form-select {
+    width: 400px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--corp);
+    color: var(--clear);
+    border-radius: 6px;
+    padding: 15px;
+}
+
+/* Grupo de botões */
+.group__btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.btn-form {
+    background-color: var(--corp);
+    color: var(--bg);
+    border: 1px solid var(--corp);
+    border-radius: 69px;
+    padding: 12px 24px;
+    margin: 0 10px;
+    width: 380px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/*---------- Responsivo  ----------*/
+@media screen and (max-width: 990px) {
+    .novoPedido__container,
+    .titulos {
+        flex-direction: column;
+    }
+    .form-select {
+        margin-bottom: 30px;
+    }
+    .btn-mobile {
+        display: none;
+    }
+}
