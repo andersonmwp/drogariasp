@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/filtros.css">
+    <link rel="stylesheet" href="/css/pedido.css">
     <link rel="stylesheet" href="/css/tabela.css">
 </head>
 <body>
@@ -21,13 +22,13 @@
             <ul>
                 <section>
                     <a href="index.html">
-                        <li class="menu__item ativo">
+                        <li class="menu__item">
                             <i class="fas fa-home"></i>
                         </li>
                     </a>
     
                     <a href="pedidos.html">
-                        <li class="menu__item">
+                        <li class="menu__item ativo">
                             <i class="fas fa-shopping-basket"></i>
                         </li>
                     </a>
@@ -77,7 +78,7 @@
               <div class="collapse navbar-collapse menu__item-container" id="navbarNav">
                 <ul class="navbar-nav">
                     <a href="index.html">
-                        <li class="menu__item-mob ativo__mobile">
+                        <li class="menu__item-mob">
                             <i class="fas fa-home">
                                 <span>Dashboard</span>
                             </i>
@@ -85,7 +86,7 @@
                     </a>
 
                     <a href="pedidos.html">
-                        <li class="menu__item-mob">
+                        <li class="menu__item-mob ativo__mobile">
                             <i class="fas fa-shopping-basket">
                                 <span>Pedidos</span>
                             </i>
@@ -130,57 +131,47 @@
     </section>
 
     <main class="container">
-        <!-- ######### SEÇÃO DOS FILTROS DO TOPO ######### -->
-        <section class="filtros__container">
+        <section class="pedidos__container">
             <div class="titulo__container">
                 <p class="titulo" >Olá, <br><b>Drogaria São Paulo</b></p>
             </div>
 
-            <div class="cards__container">
-                <button class="card_status ativo-status">
-                    <h1>0</h1>
-                    <div>
-                        <i class="fas fa-layer-group"></i>
-                        <p>Total</p>
-                    </div>
-                </button>
-
-                <button class="card_status">
-                    <h1>0</h1>
-                    <div>
-                        <i class="fas fa-briefcase"></i>
-                        <p>Depositados</p>
-                    </div>
-                </button>
-
-                <button class="card_status">
-                    <h1>0</h1>
-                    <div>
-                        <i class="fas fa-business-time"></i>
-                        <p>Atrasados</p>
-                    </div>
-                </button>
-
-                <button class="card_status">
-                    <h1>0</h1>
-                    <div>
-                        <i class="fas fa-check"></i>
-                        <p>Coletados</p>
-                    </div>
-                </button>
+            <div class="pedido__select">
+                <label class="pedido__select-etiqueta">Selecione a loja:</label>
+                <select class="select">
+                    <option>Todas as lojas</option>
+                </select>
             </div>
         </section>
-
         <!-- ######### SEÇÃO DO FILTRO INPUT ######### -->
         <section class="tabela__desktop">
-            <div class="tabela__filtro-container">
-                <h1 class="titulo dash"><b>Dashboard</b></h1>
-
-                <div class="flex-center">
-                    <a class="btn__filtro" href="#">Novo Pedido</a>
+            <section class="pedido__busca-container">
+                <div>
+                    <h1 class="pedido__titulo dash">Pedidos</h1>
                 </div>
-            </div>
 
+                <form class="pedido__form">
+                    <div class="pedido__form-img">
+                        <img src="https://drogariasp.newpost.com/assets/pdf.png" alt="icone do pdf">
+                        <img src="https://drogariasp.newpost.com/assets/xls.png" alt="icone do xml">
+                    </div>
+    
+                    <div>
+                        <label>Início</label>
+                        <input type="text" value="28/02/2021" id="data__inicial">
+                    </div>
+    
+                    <div>
+                        <label>Fim</label>
+                        <input type="text" value="28/03/2021" id="data__final">
+                    </div>
+
+                    <div>
+                        <input type="button" name="enviar" value="OK" class="pedido__form-btn">
+                    </div>
+                </form> 
+            </section>
+            
             <label class="tabela__filtro-campo">
                 <input type="search" class="form-control form-control-sm" aria-controls="datatable">
             </label>

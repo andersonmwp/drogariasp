@@ -1,0 +1,111 @@
+/*---------- Página de pedido  ----------*/
+
+/* Titulo e select */
+.pedidos__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 50px;
+}
+
+.pedido__select {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-left: 30px;
+}
+
+.pedido__select label {
+    color: #FFF;
+}
+
+.select {
+    background: none;
+    color: var(--gray);
+    
+    width: 320px;
+
+    margin: 10px;
+    padding: 15px;
+
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+
+    filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.06));
+
+    box-sizing: border-box;
+}
+
+/* Busca do pedido */
+.pedido__busca-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pedido__titulo {
+    color: #FFF;
+    font-size: 1.85rem;
+    align-items: center;
+}
+
+/* Form de busca */
+.pedido__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pedido__form-img {
+    margin: 0 20px;
+}
+
+.pedido__form label {
+    color: #FFF;
+}
+
+#data__inicial, #data__final {
+    background: none;
+    color: var(--gray);
+    
+    box-sizing: border-box;
+    border: 1px solid var(--gray);
+    border-radius: 69px;
+    filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.06));
+
+    margin: 10px;
+    padding: 10px;
+
+    width: 150px;
+}
+
+.pedido__form-btn {
+    background: var(--corp);
+    color: var(--clear);
+
+    border: 1px solid var(--corp);
+    border-radius: 69px;
+    box-sizing: border-box;
+    filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.06));
+  
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.pedido__form-btn:hover {
+    background: var(--bg);
+    color: var(--corp);
+}
+
+/*---------- Responsivo  ----------*/
+@media screen and (max-width: 990px) {
+    .pedido__busca-container,
+    .pedido__form {
+        flex-direction: column;
+    }
+    .pedido__titulo {
+        margin-top: 20px;
+    }
+}
