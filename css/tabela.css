@@ -37,7 +37,7 @@
 
 /* Input do filtro */
 .tabela__filtro-campo input {
-    background: var(--bg2);
+    background-color: var(--bg2);
     color: var(--corp);
 
     height: 48px;
@@ -51,6 +51,11 @@
     box-shadow: 2px 1px 0.2em var(--border);
 
     margin: 20px;
+}
+
+.tabela__filtro-campo input:focus {
+    background-color: var(--bg2);
+    border: none;
 }
 
 .tabela__filtro-campo:hover input {
@@ -110,5 +115,8 @@ table tbody tr td:last-child {
     .tabela__filtro-container,
     .tabela__filtro-campo {
         display: none;
+    }
+    #tabela {
+        padding: 0;
     }
 }
